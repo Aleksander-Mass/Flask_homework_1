@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Clothes</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Главная страница</a>
+        <a href="{{ url_for('contacts') }}">Контакты</a>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer>
+        <div>
+            <p>Copyright © 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

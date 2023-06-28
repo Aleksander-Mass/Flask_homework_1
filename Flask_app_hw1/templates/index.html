@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+{% block content %}
+    <h1>Добро пожаловать в интернет магазин Flask Clothes!</h1>
+    <h2>Категории:</h2>
+    <ul>
+        {% for cat in category %}
+        <li>
+            <a href="{{ url_for(cat.func_name) }}">{{ cat.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
